@@ -1,0 +1,76 @@
+/*
+----CORES----
+Laranja = #A1712C
+Verde = #2A484A
+Amarelo = #F4DC82
+
+----FONTES----
+Menu = CormorantGaramond
+Letreiro(principal) = NotoSerifDisplay-regular
+Letreiro("Nossas vantagens") = NotoSerifDisplay-regular
+Textos = Marcellus
+*/
+
+@font-face {
+    font-family: NotoSerifDisplay-regular;
+    src: url(Fonts/NotoSerifDisplay-VariableFont_wdth\,wght.ttf)
+}
+
+@font-face {
+    font-family: NotoSerifDisplay-light;
+    src: url(Fonts/NotoSerifDisplay-Light.ttf)
+}
+
+@font-face {
+    font-family: CormorantGaramond;
+    src: url(Fonts/CormorantGaramond.ttf)
+}
+
+@font-face {
+    font-family: Marcellus;
+    src: url(Fonts/Marcellus-Regular.ttf)
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    color: white;
+    background-color: #2A484A;
+}
+
+header img{
+    width: 130px;
+}
+
+#first_section{
+    font-family: NotoSerifDisplay-regular;
+    color: #F4DC82;
+    font-size: 100px;
+    background-color: #2A484A;
+
+    display: flex;
+    height: 600px;
+}
+
+#text_first_section{
+    width: 40%;
+}
+
+#image_first_section{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#image_first_section img {
+    max-width: 110%;
+    height: auto;
+}
