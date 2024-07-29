@@ -3,33 +3,34 @@
 Laranja = #A1712C
 Verde = #2A484A
 Amarelo = #F4DC82
-
+Branco(diferente) = #fff9f3
 ----FONTES----
 Menu = CormorantGaramond
-Letreiro(principal) = NotoSerifDisplay-regular
-Letreiro("Nossas vantagens") = NotoSerifDisplay-regular
+Letreiros = NotoSerifDisplay-regular
 Textos = Marcellus
 */
 
-@font-face {
+@font-face{
     font-family: NotoSerifDisplay-regular;
     src: url(Fonts/NotoSerifDisplay-VariableFont_wdth\,wght.ttf)
 }
 
-@font-face {
+@font-face{
     font-family: NotoSerifDisplay-light;
     src: url(Fonts/NotoSerifDisplay-Light.ttf)
 }
 
-@font-face {
+@font-face{
     font-family: CormorantGaramond;
     src: url(Fonts/CormorantGaramond.ttf)
 }
 
-@font-face {
+@font-face{
     font-family: Marcellus;
     src: url(Fonts/Marcellus-Regular.ttf)
 }
+
+/*-----------------FONTES-FIM-----------------*/
 
 * {
     padding: 0%;
@@ -39,38 +40,266 @@ Textos = Marcellus
     scroll-behavior: smooth;
 }
 
+/*-----------------CABECALHO----------------*/
 header{
+    font-family: CormorantGaramond;
+    font-size: 100%;
+    text-align: center;
     color: white;
     background-color: #2A484A;
 }
 
 header img{
-    width: 130px;
+    width: 13vh;
 }
 
+header nav{
+    width: 80%;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+}
+
+header li{
+    align-self: center;
+    padding: 10px;
+}
+
+nav a{
+    font-size: 20px;
+    text-decoration:none;
+    color: white;
+    padding: 0px 10px 10px 0;
+    position: relative;
+}
+
+#navegacao a::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 30%;
+    left: -2%;
+    transition: 0.6s;
+}
+
+#navegacao a:hover::after{
+    width: 90%;
+}
+
+/*-----------------CABECALHO-FIM----------------*/
+
+/*-----------------FIRST-PAGE----------------*/
 #first_section{
+    height: 80vh;
     font-family: NotoSerifDisplay-regular;
     color: #F4DC82;
     font-size: 100px;
     background-color: #2A484A;
-
     display: flex;
-    height: 600px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #text_first_section{
-    width: 40%;
+    margin-left: 5%;
+    width: 50%;
+}
+
+#text_first_section p{
+    padding-left: 40%;
 }
 
 #image_first_section{
     display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    width: 40%;
+    align-self: flex-end;
 }
 
-#image_first_section img {
+#image_first_section img{
+    animation: mover 17s linear infinite;
     max-width: 110%;
-    height: auto;
+    height: 100vh;
+    object-fit: cover;
 }
+
+@keyframes mover {
+    0% {
+        transform: translateX(-11%);
+        filter: blur(0.5px);
+    }
+    20% {
+        transform: translateX(-14%);
+        filter: blur(0.8px);
+    }
+    40% {
+        transform: translateX(-10%);
+        filter: blur(0.7px);
+    }
+    60% {
+        transform: translateX(-14%);
+        filter: blur(0.7px);
+    }
+    80% {
+        transform: translateX(-10%);
+        filter: blur(0.8px);
+    }
+    100% {
+        transform: translateX(-11%);
+        filter: blur(0.7px);
+    }
+}
+/*-----------------FIRST-PAGE-FIM----------------*/
+
+/*-----------------SECOND-PAGE----------------*/
+#sobre_section{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    padding-right: 0px;
+    background-color: #A1712C;
+    justify-content: space-around;
+}
+
+#text_sobre_section{
+    color: white;
+    font-family: marcellus;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+#text_sobre_section p{
+    text-align: left;
+}
+
+#text_sobre_section h2{
+    margin-top: 70px;
+}
+
+#image_sobre_section{
+    text-align: center;
+    width: 40%;
+}
+
+#image_sobre_section img{
+    border-radius: 25px;
+    width: 400px;
+}
+/*-----------------SECOND-PAGE-FIM----------------*/
+
+/*-----------------THIRD-PAGE----------------*/
+#produtos_section{
+    text-align: center;
+    height: 80vh;
+    align-items: center;
+    padding: 80px;
+    background-color: #fff9f3;
+}
+
+#produtos_section h2{
+    font-size: 80px;
+    font-weight: 500;
+    font-family: NotoSerifDisplay-regular;
+    width: 100%;
+}
+
+#produtos{
+    font-size: 22px;
+    font-family: CormorantGaramond;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#produtos img{
+    transition: 0.3s;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: solid #303f3c 1px;
+    width: 300px;
+}
+
+#produtos img:hover{
+    width: 310px;
+    
+}
+
+#produtos p{
+    padding-top: 10px;
+}
+/*-----------------THIRD-PAGE-FIM----------------*/
+
+/*-----------------FOURTH-PAGE----------------*/
+#qualidades-section{
+    font-family: Marcellus;
+    color: white;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 80vh;
+    align-items: center;
+    padding: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #2A484A;
+    display: flex;
+}
+
+#qualidades-section img{
+    width: 400px;
+    border: solid #fff9f3 15px;
+}
+
+#qualidades-section h3{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#qualidades-section p{
+    padding-top: 20px;
+    font-size: 15px;
+}
+/*-----------------FOURTH-PAGE-FIM----------------*/
+
+/*-----------------FIFTH-PAGE----------------*/
+#vantagens_section{
+    font-size: 50px;
+    color: #303f3c;
+    font-family: NotoSerifDisplay-regular;
+    font-weight: 500;
+    text-align: center;
+    height: 80vh;
+    align-items: center;
+    padding: 80px;
+    background-color: #fff9f3;
+}
+
+#vantagens{
+    justify-content: center;
+    font-family: CormorantGaramond;
+    font-size: 20px;
+    display: flex;
+    padding: 40px;
+}
+
+#vantagens::before{
+    content: "";
+    position: absolute;
+    top: 10px; /* Ajuste a posição da borda */
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 5px solid black; /* Borda de 5px */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+#vantagens_section img{
+    margin-top: 130px;
+    width: 300px;
+}
+
+/*-----------------FIFTH-PAGE-FIM----------------*/
