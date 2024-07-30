@@ -30,6 +30,11 @@ Textos = Marcellus
     src: url(Fonts/Marcellus-Regular.ttf)
 }
 
+@font-face {
+    font-family: Christmas Bell;
+    src: url(Fonts/Christmas\ Bell\ -\ Personal\ Use.otf);
+}
+
 /*-----------------FONTES-FIM-----------------*/
 
 * {
@@ -47,7 +52,6 @@ Textos = Marcellus
 /*-----------------CABECALHO----------------*/
 header{
     font-family: CormorantGaramond;
-    font-size: 100%;
     text-align: center;
     color: white;
     background-color: #2A484A;
@@ -229,7 +233,6 @@ nav a{
 
 #produtos img:hover{
     width: 310px;
-    
 }
 
 #produtos p{
@@ -269,13 +272,12 @@ nav a{
 /*-----------------FOURTH-PAGE-FIM----------------*/
 
 /*-----------------FIFTH-PAGE----------------*/
-#vantagens_section{
+#vantagens-section{
     font-size: 50px;
     color: #303f3c;
     font-family: NotoSerifDisplay-regular;
     font-weight: 500;
     text-align: center;
-    height: 80vh;
     align-items: center;
     padding: 80px;
     background-color: #fff9f3;
@@ -298,23 +300,116 @@ nav a{
     border-bottom:  2px solid #3f3030;
 }
 
-#vantagens_section img{
+#vantagens-section img{
     margin-top: 130px;
     width: 250px;
 }
 /*-----------------FIFTH-PAGE-FIM----------------*/
 
 /*-----------------SIXTH-PAGE----------------*/
-#instagram_section{
-    height: 80vh;
+#instagram-section{
+    height: 100vh;
+    padding: 5%;
     background-color: #2A484A;
 }
 
+#titulo-instagram{
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 100px;
+    font-family: Christmas Bell;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
 
+#titulo-instagram a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#instagram_posts{
+    color: #303f3c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.instagram {
+    width: 25%;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.instagram a{
+    text-decoration: none;
+    color: #303f3c;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.perfil .usuario {
+    font-weight: bold;
+}
+
+.foto_postagem {
+    width: 100%;
+    height: auto;
+}
+
+.postagem {
+    padding: 10px;
+}
+
+.postagem i{
+    width: 20px;
+    margin-bottom: 7px;
+}
+
+.descricao {
+    font-size: 14px;
+}
+
+#instagram-1 {
+    animation: crescerDiminuir 5s infinite;
+}
+
+#instagram-2 {
+    animation: crescerDiminuir 5s infinite;
+    animation-delay: 0.3s; /* Ajuste o atraso conforme necessário */
+}
+
+#instagram-3 {
+    animation: crescerDiminuir 5s infinite;
+    animation-delay: 0.6s; /* Ajuste o atraso conforme necessário */
+}
+
+@keyframes crescerDiminuir {
+    0% {
+        width: 25%;
+    }
+    50% {
+        width: 26%;
+    }
+    100% {
+        width: 25%;
+    }
+}
 /*-----------------SIXTH-PAGE-FIM----------------*/
 
 /*-----------------SEVENTH-PAGE----------------*/
-#servicos_section{
+#servicos-section{
     height: 70vh;
     display: flex;
     align-items: center;
@@ -324,7 +419,7 @@ nav a{
     justify-content: space-around;
 }
 
-#text_services_section{
+#text_services-section{
     color: white;
     font-family: marcellus;
     font-size: 20px;
@@ -332,16 +427,16 @@ nav a{
     width: 50%;
 }
 
-#text_services_section p{
+#text_services-section p{
     text-align: left;
 }
 
-#image_services_section{
+#image_services-section{
     text-align: center;
     width: 40%;
 }
 
-#image_services_section img{
+#image_services-section img{
     border-radius: 25px;
     width: 400px;
 }

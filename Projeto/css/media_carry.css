@@ -1,0 +1,255 @@
+@media (min-width: 600px) and (max-width: 899px){
+    /*-----------------CABECALHO----------------*/
+    header img{
+        width: 13vh;
+    }
+
+    header li{
+        padding: 5px;
+    }
+
+    header nav{
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 15px;
+        padding: 0px 20px 20px 0;
+    }
+
+    #navegacao a::after{
+        display: none;
+    }
+
+    #navegacao a:hover::after{
+        display: none;
+    }
+    /*-----------------CABECALHO-FIM----------------*/
+
+    /*-----------------FIRST-PAGE----------------*/
+    #first_section{
+        height: 70vh;
+        font-size: 50px;
+    }
+
+    #text_first_section{
+        margin-left: 5%;
+        width: 30%;
+    }
+
+    #image_first_section{
+        width: 50%;
+    }
+
+    #image_first_section img{
+        max-width: 130%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    /*-----------------FIRST-PAGE-FIM----------------*/
+
+
+    /*-----------------SECOND-PAGE----------------*/
+    #sobre_section{
+        padding: 20px;
+        height: 80vh;
+    }
+
+    #text_sobre_section{
+        font-size: 15px;
+    }
+
+    #text_sobre_section p{
+        margin-bottom: 20px;
+    }
+
+    #text_sobre_section h2{
+        margin-top: 0px;
+    }
+
+    #image_sobre_section{
+        width: 45%;
+    }
+
+    #image_sobre_section img{
+        width: 250px;
+    }
+    /*-----------------SECOND-PAGE-FIM----------------*/
+
+    /*-----------------THIRD-PAGE----------------*/
+    #produtos_section{
+        height: 45vh;
+        padding: 40px;
+    }
+
+    #produtos_section h2{
+        font-size: 40px;
+    }
+
+    #produtos{
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    #produtos img{
+        transition: none;
+        padding: 10px;
+        margin-bottom: 5px;
+        width: 100px;
+    }
+
+    #produtos img:hover{
+        width: 100px;
+    }
+    /*-----------------THIRD-PAGE-FIM----------------*/
+
+    /*-----------------FOURTH-PAGE----------------*/
+    #qualidades-section{
+        height: 60vh;
+        padding: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    #qualidades-section img{
+        width: 200px;
+        border: solid #fff9f3 10px;
+    }
+
+    #qualidades-section h3{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+    #qualidades-section p{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    /*-----------------FOURTH-PAGE-FIM----------------*/
+
+    /*-----------------FIFTH-PAGE----------------*/
+    #vantagens-section{
+        font-size: 30px;
+        padding: 40px;
+    }
+
+    #vantagens{
+        flex-wrap: wrap;
+        font-size: 30px;
+        padding: 40px;
+    }
+
+    #vantagens div{
+        width: 200px;
+    }
+
+    #vantagens p{
+        padding-bottom: 40px;
+    }
+
+    #vantagens-section img{
+        margin-top: 40px;
+        width: 200px;
+    }
+    /*-----------------FIFTH-PAGE-FIM----------------*/
+
+    /*-----------------SIXTH-PAGE----------------*/
+    #instagram-section{
+        height: 75vh;
+    }
+
+    #titulo-instagram{
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+
+    #instagram_posts{
+        flex-wrap: wrap;
+    }
+
+    .instagram {
+        width: 40%;
+    }
+
+    .postagem i{
+        width: 15px;
+        margin-bottom: 5px;
+    }
+
+    .descricao {
+        font-size: 10px;
+    }
+
+    #instagram-1 {
+        display: none;
+    }
+
+    @keyframes crescerDiminuir {
+        0% {
+            width: 40%;
+        }
+        50% {
+            width: 41%;
+        }
+        100% {
+            width: 40%;
+        }
+    }
+    /*-----------------SIXTH-PAGE-FIM----------------*/
+
+    /*-----------------SEVENTH-PAGE----------------*/
+    #servicos-section{
+        padding: 20px;
+        height: 80vh;
+    }
+
+    #text_services-section{
+        font-size: 15px;
+    }
+
+    #text_services-section p{
+        margin-bottom: 20px;
+    }
+
+    #image_services-section{
+        width: 45%;
+    }
+
+    #image_services-section img{
+        width: 250px;
+    }
+    /*-----------------SEVENTH-PAGE-FIM----------------*/
+
+    /*-----------------FOOTER----------------*/
+    #imagem_footer{
+        max-height: 45vh;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+
+    #nome{
+        font-size: 10px;
+    }
+
+    #footer_info{
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1%;
+    }
+
+    .titulo{
+        font-size: 10px;
+    }
+
+    #infos{
+        padding-top: 1%;
+    }
+
+    #contatos img{
+        width: 20px;
+    }
+    /*-----------------FOOTER-FIM----------------*/
+}
