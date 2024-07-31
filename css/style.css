@@ -239,13 +239,14 @@ nav a{
 #qualidades-section{
     font-family: Marcellus;
     color: white;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     height: 80vh;
     align-items: center;
-    padding: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     background-color: #2A484A;
     display: flex;
 }
@@ -253,6 +254,10 @@ nav a{
 #qualidades-section img{
     width: 400px;
     border: solid #fff9f3 15px;
+}
+
+#qualidades-section div{
+    width: 45%;
 }
 
 #qualidades-section h3{

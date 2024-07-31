@@ -121,6 +121,7 @@
 
     /*-----------------FOURTH-PAGE----------------*/
     #qualidades-section{
+        justify-content: center;
         height: auto;
         padding: 30px;
         padding-left: 40px;
@@ -134,6 +135,10 @@
     #qualidades-section img{
         width: 200px;
         border: solid #fff9f3 10px;
+    }
+
+    #qualidades-section div{
+        width: 60%;
     }
 
     #qualidades-section h3{
