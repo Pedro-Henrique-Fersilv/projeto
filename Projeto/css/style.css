@@ -136,27 +136,22 @@ nav a{
 @keyframes mover {
     0% {
         transform: translateX(-11%);
-        filter: blur(0.5px);
     }
     20% {
         transform: translateX(-14%);
-        filter: blur(0.8px);
     }
     40% {
         transform: translateX(-10%);
-        filter: blur(0.7px);
     }
     60% {
         transform: translateX(-14%);
-        filter: blur(0.7px);
     }
     80% {
         transform: translateX(-10%);
-        filter: blur(0.8px);
+        filter: blur(0.7px);
     }
     100% {
         transform: translateX(-11%);
-        filter: blur(0.7px);
     }
 }
 /*-----------------FIRST-PAGE-FIM----------------*/
@@ -308,7 +303,7 @@ nav a{
 
 /*-----------------SIXTH-PAGE----------------*/
 #instagram-section{
-    height: 100vh;
+    height: 80vh;
     padding: 5%;
     background-color: #2A484A;
 }
@@ -381,18 +376,18 @@ nav a{
     font-size: 14px;
 }
 
-#instagram-1 {
+#instagram-1{
     animation: crescerDiminuir 5s infinite;
 }
 
-#instagram-2 {
+#instagram-2{
     animation: crescerDiminuir 5s infinite;
-    animation-delay: 0.3s; /* Ajuste o atraso conforme necessário */
+    animation-delay: 0.3s;
 }
 
-#instagram-3 {
+#instagram-3{
     animation: crescerDiminuir 5s infinite;
-    animation-delay: 0.6s; /* Ajuste o atraso conforme necessário */
+    animation-delay: 0.6s;
 }
 
 @keyframes crescerDiminuir {
