@@ -13,8 +13,8 @@
     }
 
     nav a{
-        font-size: 13px;
-        padding: 0px 20px 0px 20px;
+        font-size: 11px;
+        padding: 0px 10px 0px 10px;
     }
 
     #navegacao a::after{
@@ -53,7 +53,7 @@
 
     #image_first_section img{
         max-width: 125%;
-        min-height: 45vh;
+        min-height: 40vh;
         height: auto;
         object-fit: cover;
         animation: none;
@@ -177,6 +177,7 @@
     /*-----------------SIXTH-PAGE----------------*/
     #instagram-section{
         height: 125vh;
+        max-width: display;
     }
 
     #titulo-instagram{
