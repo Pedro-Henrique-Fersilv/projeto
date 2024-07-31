@@ -52,7 +52,7 @@
     }
 
     #image_first_section img{
-        max-width: 125%;
+        max-width: 120%;
         min-height: 40vh;
         height: auto;
         object-fit: cover;
@@ -176,8 +176,7 @@
 
     /*-----------------SIXTH-PAGE----------------*/
     #instagram-section{
-        height: 125vh;
-        max-width: display;
+        height: 830px;
     }
 
     #titulo-instagram{
@@ -220,13 +219,13 @@
 
     @keyframes crescerDiminuir {
         0% {
-            width: 230px;
+            width: 200px;
         }
         50% {
-            width: 240px;
+            width: 210px;
         }
         100% {
-            width: 230px;
+            width: 200px;
         }
     }
     /*-----------------SIXTH-PAGE-FIM----------------*/
@@ -466,7 +465,7 @@
 
     /*-----------------SIXTH-PAGE----------------*/
     #instagram-section{
-        height: 60vh;
+        height: 500px;
     }
 
     #titulo-instagram{
